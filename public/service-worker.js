@@ -9,7 +9,8 @@ const CACHE_NAME = APP_PREFIX + VERSION;
 const FILES_TO_CACHE = [
     "./index.html",
     "./css/styles.css",
-    "./js/index.js"
+    "./js/index.js",
+    "./js/idb.js"
 ]
 
 // we use self here because service workers run before the window object is created
