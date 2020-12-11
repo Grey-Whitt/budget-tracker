@@ -7,6 +7,7 @@ const CACHE_NAME = APP_PREFIX + VERSION;
 
 //these are the files that will be cached for offline use
 const FILES_TO_CACHE = [
+    '/',
     "./index.html",
     "./css/styles.css",
     "./js/index.js",
@@ -22,6 +23,7 @@ self.addEventListener('install', function (event) {
             return cache.addAll(FILES_TO_CACHE)
         })
     )
+    self.skipWaiting();
 })
 
 //this is used to clear old data from the cache
@@ -43,6 +45,7 @@ self.addEventListener('activate', function (event) {
             );
         })
     );
+    self.clients.claim()
 });
 
 //listen for a fetch - if the requested file is cached return it, else get it from the server
