@@ -3,7 +3,7 @@
 <img src="./public/icons/site.png" alt="96 lighthouse score" width="600"/>
 
 ## Description
-This is an API for a social network style website where users can create and account, share their thoughts, and react to thoughts. It is using MongoDB for the database and Mongoose to interact with that database.
+Budget tracker is a Progressive Web App using mongoDB that allows users to keep track of their finances without an internet connection.
 
 * [Contribution](#Contribution)
 * [Technologies](#Technologies-Used)
